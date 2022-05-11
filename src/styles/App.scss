@@ -1,0 +1,59 @@
+@import "~normalize.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  font-family: "Arial", sans-serif;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border: 2px solid teal;
+  border-radius: 8px;
+
+  &__btns {
+    display: flex;
+    align-items: center;
+
+    > * {
+      margin-left: 15px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  margin: 0 0 15px;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.filter {
+  margin: 15px 0;
+  padding: 15px 0 0;
+  border-top: 1px solid teal;
+}
+
+.error {
+  color: tomato;
+}
+
+.login {
+  max-width: 500px;
+  margin: 0 auto;
+}
